@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tic-tac-toe.css">
+    <link rel="icon" type="image/x-icon" href="Tic_tac_toe.svg">
+</head>
+
+<body>
+    <div class="game-area">
+        <h1> Welcome to X-O game!</h1>
+        <br>
+        <label for="with_computer">with computer?</label>
+        <input type="checkbox" id="with_computer" onclick="compTrue()">
+        <br>
+        <button onclick="generateGame()">Start Game</button>
+        <button onclick="restartGame()">Restart Game</button>
+        <br>
+        <div class="game-board" id="game-board"></div>
+      <div> O score: <span id="Oscore"></span></div> 
+      <div> X score: <span id="Xscore"></span></div>
+    </div>
+    <script src="ttt.js"></script>
+    
+
+</body>
+
+</html>
